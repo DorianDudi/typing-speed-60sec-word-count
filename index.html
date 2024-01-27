@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>typing speed</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+		<div class="menuContainer">
+			<div class="gridContainer">
+				<div class="gridDiv" id="div1">
+					<h1>- typing speed: word count -</h1>
+				</div>
+				<div class="gridDiv" id="div2">
+					<button id="start" onclick="runTimer()">START</button>
+					<button hidden id="reset" onclick="resetTimer()">RESET</button>
+				</div>
+				<div class="gridDiv" id="div3">
+					<p id="currentCount">Current word count: <span id="countValue">000</span></p>
+				</div>
+				<div class="gridDiv" id="div4">
+					<p id="maxCount"> Max word count: <span id="maxValue">000</span></p>
+				</div>
+			</div>
+			<div id="instructions">
+				<p>Start the counter and correctly type as many words as you can in one minute:</p>
+			</div>
+		</div>
+		<div class="wordListContainer">
+			<p id="htmlWordList"></p>
+		</div>
+		<p hidden id="timer" class>60</p>
+		<script src="scripts.js"></script>
+  </body>
+</html>
