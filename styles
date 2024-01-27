@@ -1,0 +1,126 @@
+.menuContainer {
+  width: 300px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 56px);
+  grid-template-rows: repeat(3, 25px);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.gridDiv{
+  background-color: silver;
+}
+
+#div1 { grid-area: 1 / 1 / 2 / 6; }
+#div2 { grid-area: 2 / 1 / 4 / 3; }
+#div3 { grid-area: 2 / 3 / 3 / 6; }
+#div4 { grid-area: 3 / 3 / 4 / 6; }
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+h1 {
+  color: green;
+  font-size: 20px;
+  font-style: bold;
+  background-color: silver;
+  width: 300px;
+}
+
+h1, p, button {
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#start, #reset {
+  border: none;
+  height: 100%;
+  width: 100%;
+  background-color: silver;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+#start:hover, #reset:hover {
+    background-color: orange;
+}
+
+#start:active, #reset:active {
+  border: 3px solid gray;
+}
+
+#currentCount, #maxCount {
+  line-height: 23px;
+  text-align: left;
+}
+
+#countValue, #maxValue {
+  font-weight: bold;
+}
+
+#instructions {
+  font-size: 10px;
+  margin-top: 7px;
+}
+
+.wordListContainer {
+  display: block;
+  border: 1px solid gray;
+  border-bottom: 3px solid gray;
+  margin: auto;
+  margin-top: 7px;
+  width: 85%;
+}
+
+#htmlWordList {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+  line-height: 35px;
+  font-size: 30px;
+}
+
+#highlighted {
+  background-color: black;
+  color: white;
+}
+
+.cursorAnimationFrame1 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.typedCorrectly {
+  color: white;
+  background-color: green;
+}
+
+.typedWrong {
+  color: white;
+  background-color: red;
+}
+
+#timer {
+  margin: auto;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.timerCounterOn {
+  font-size: 60px;
+  color: orange;
+}
+
+.timerCounterOff {
+    font-size: 20px;
+}
