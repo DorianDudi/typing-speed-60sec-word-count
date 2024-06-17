@@ -66,6 +66,7 @@ function updateCurrentRowState() { // compares the highlighted char with user in
             charStates[highlightCharIndex] = 2; // 2 is for the correcltly typed value
         } else {
             charStates[highlightCharIndex] = 3; // 3 is for the wrong value
+	    currentWordIsCorrect = 0;
         }
         if (highlightCharIndex < currentRowInnerHTML_Raw.length - 1) { //if not at row's end highlight the next char
             charStates[highlightCharIndex + 1] = 1;
